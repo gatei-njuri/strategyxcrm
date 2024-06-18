@@ -1,3 +1,6 @@
+import os
+from pathlib import Path
+from dotenv import load_dotenv
 """
 Django settings for tealcrm project.
 
@@ -20,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-k(hp&l!g==^8y9l49i(6i9g1n4ven2s0o_uhq^uxf30iub89j='
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 

@@ -1,1 +1,2 @@
-# tealcrm
+# Strategyx CRM
+
